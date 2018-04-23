@@ -24,6 +24,7 @@ Learn these following techs:
 * Reactjs and flux for js
 * Bulma for css
 * webpack for dev
+* leaflet + chartist for dynamic graphs
 
 
 ## Results
