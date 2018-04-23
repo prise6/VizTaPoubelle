@@ -1,0 +1,127 @@
+
+.leaflet-container {
+    height:200px;
+    max-width:800px; 
+    background-color:rgba(255,0,0,0.0);
+    margin:auto;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #000;
+}
+.info span {
+    color: #555;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.correct {
+    background-color:green;
+}
+
+.faux {
+    background-color:red;
+}
+
+
+.drawer-logo {
+    background-position: 0 -751px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    width: 227px;
+    height: 41px;
+    background-image: url(../assets/img/lincoln-sprite.png);
+    transform: scale(.44);
+}
+
+.hero-head {
+    min-height: 3.25rem;
+    padding: .5em 1em;
+}
+
+.reponses{
+    margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+@media screen and (max-width: 769px) {
+  .reverse-column-order {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    .legend {
+        display: none
+    }
+}
+
+#myChartist .ct-chart-line, #myChartist .ct-chart-bar{
+    max-width: 800px;  
+}
+@media screen and (min-width: 641px) {
+    #myChartist .ct-chart-line, #myChartist .ct-chart-bar{
+        min-height: 250px;
+    }
+}
+
+
+.ct-grids line {
+  stroke: #fff;
+}
+
+.ct-labels span {
+  color: #fff;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #ef9221;
+}
+
+.ct-series-a .ct-line {
+    stroke-width: 2px;
+}
+
+.ct-series-a .ct-point {
+    stroke-width: 8px;
+}
+
+.ct-series-a .ct-area {
+    fill: #ef9221;
+}
+
+.ct-label.ct-horizontal { 
+    position: relative;
+    transform: rotate(45deg); 
+    transform-origin: left top; 
+}
+
+.icon-share {
+    margin:10px auto;
+    width:32px;
+    height:32px;
+}
+
+.icon-share:hover{
+    cursor:pointer;
+}

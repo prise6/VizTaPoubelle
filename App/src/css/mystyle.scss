@@ -1,0 +1,40 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #2c4561;
+$green: #ef9221;
+// Add pink and its invert
+@font-face {
+    font-family: gotham-light;
+    src: url(../assets/Gotham-Light.otf);
+}
+@font-face {
+    font-family: gotham-bold;
+    src: url(../assets/GothamBook.ttf);
+}
+// @include font-face(Samplino, "../assets/GothamFontsFamily");
+$family-sans-serif: "gotham-light", serif;
+$gotham-bold: "gotham-bold", "gotham-light";
+// 3. Set the derived variables
+// Use the new pink as the primary color
+// $info: $blue;
+
+
+// 5. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+$footer-background-color:$success;
+
+
+// 6. Import the rest of Bulma
+@import "../../node_modules/bulma/bulma";
+
+.hero-head {
+	font-family:$gotham-bold;
+}
+
+.footer{
+	padding:1rem .5rem 1rem;
+}
