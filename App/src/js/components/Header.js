@@ -20,7 +20,7 @@ export default class Header extends React.Component {
     if ((this.props.levelNum > 0) & (this.props.gameReady === true)) {
       return (
         <a class="button is-success is-outlined" onClick={this.props.changeLevel}>
-          prochaine question &rarr;
+          prochaine question
         </a>
       );
     }
