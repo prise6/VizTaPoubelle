@@ -28,6 +28,14 @@ export default class ParisArrondissements extends React.Component {
 		this.refs.map.leafletElement.fitBounds(this.getBounds());
 	}
 
+	componentDidUpdate(prevProps, prevState, snapshot){
+		if(prevProps.hidden === true){
+			this.refs.geojson.leafletElement.eachLayer(function(layer) {
+				layer.unbindTooltip();
+			})
+		}
+	}
+
 	getCenter() {
 		return [0, 0];
 	}
@@ -92,6 +100,7 @@ export default class ParisArrondissements extends React.Component {
 	}
 
 	onEachFeature(feature, layer) {
+		console.log("onEachFeature");
 		if (feature.properties && feature.properties.nom) {
 			if(this.props.hidden === true){
 				layer.bindTooltip(feature.properties.nom);
