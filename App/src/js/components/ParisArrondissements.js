@@ -93,7 +93,9 @@ export default class ParisArrondissements extends React.Component {
 
 	onEachFeature(feature, layer) {
 		if (feature.properties && feature.properties.nom) {
-			layer.bindTooltip(feature.properties.nom);
+			if(this.props.hidden === true){
+				layer.bindTooltip(feature.properties.nom);
+			}
 		}
 		layer.on({
 			mouseover: this.highlightFeature.bind(this),
@@ -128,6 +130,7 @@ export default class ParisArrondissements extends React.Component {
 				dragging={false}
 				scrollWheelZoom={false}
 				doubleClickZoom={false}
+				tap={!L.Browser.mobile}
 			>
 				{this.renderControl()}
 				<GeoJSON
