@@ -106,7 +106,7 @@ export default class Game extends React.Component {
 					<h1 class="title">Viz' Ta Poubelle </h1>
 					<h2 class="subtitle">En terme de poubelles parisiennes, tu t'y connais ?</h2>
 					<a class="button is-large is-outlined is-success" onClick={this.changeLevel.bind(this)}>
-						Envoyer les questions!
+						Lancer le Quizz!
 					</a>
 				</div>
 			);
