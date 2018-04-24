@@ -97,7 +97,8 @@ export default class ParisArrondissements extends React.Component {
 		}
 		layer.on({
 			mouseover: this.highlightFeature.bind(this),
-			mouseout: this.resetHighlight.bind(this)
+			mouseout: this.resetHighlight.bind(this),
+			click: this.highlightFeature.bind(this)
 		});
 	}
 
