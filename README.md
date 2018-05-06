@@ -5,38 +5,42 @@
 
 ## My Goal : Make a Graph Quizz !
 
-* ask question about graphs
-* dynamic graphs
+* Ask question about graphs
+* Dynamic graphs
 
 
 ## My own challenge
 
 * Create a web app
-* mobile responsive
-* few days project
+* Mobile responsive
+* Few days project
 
-
-## Technical challenge
-
-Learn these following techs:
+_Learn these following techs:_
 
 * Docker for environment
 * Reactjs and flux for js
 * Bulma for css
-* webpack for dev
-* leaflet + chartist for dynamic graphs
+* Webpack for dev
+* Leaflet + Chartist for dynamic graphs
 
 
 ## Results
 
-* [FR] website : https://prise6.github.io/VizTaPoubelle/
+* [FR] website : [dataquizz.com](http://dataquizz.com) 
+
+Known issues : IE not fully supported.
 
 
 ## What i should have done better
 
-* Go further in data
-* use more reactjs pattern i guess (hard for the first time)
-* go deeper for docker
+* Mine more data
+* Use more reactjs pattern i guess (hard for the first time)
+* Learn more about Docker
+
+## To Do
+
+* Extend concept
+* Try reactnative
 
 
 ## Directories
@@ -51,8 +55,11 @@ __Web app__
 
 * `src`: web scripts
 * `Docker`: docker to build/run dev or prod app 
+* `dist`: website files
 
 Well, the result still satisfies me :) !
 Enjoy.
+
+
 
 
