@@ -29,8 +29,7 @@ Learn these following techs:
 
 ## Results
 
-* [FR] website : https://prise6.github.io/VizTaPoubelle-site/
-* `/dist` output in : https://github.io/prise6/VizTaPoubelle-site/
+* [FR] website : https://prise6.github.io/VizTaPoubelle/
 
 
 ## What i should have done better
