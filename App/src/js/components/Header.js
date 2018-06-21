@@ -16,26 +16,22 @@ export default class Header extends React.Component {
     return null;
   }
 
-  renderButton() {
-    if ((this.props.levelNum > 0) & (this.props.gameReady === true)) {
-      return (
-        <a class="button is-success is-outlined" onClick={this.props.changeLevel}>
-          prochaine question
-        </a>
-      );
-    }
-  }
-
   render() {
     return (
       <header class="hero-head">
         <div class="container has-text-centered">
           <div class="columns">
             <div class="column">
-              <a href="http://www.lincoln.fr" class="drawer-logo"></a>
+              <a href="http://www.lincoln.fr" class="drawer-logo" />
             </div>
             <div class="column">{this.renderGameInfo()}</div>
-            <div class="column">{this.renderButton()}</div>
+            <div class="column">
+              <a href="https://github.com/prise6/VizTaPoubelle" target="_blank">
+                <span class="icon is-medium">
+                  <i class="fab fa-github fa-lg" />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </header>

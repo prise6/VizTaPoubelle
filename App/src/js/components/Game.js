@@ -65,6 +65,7 @@ export default class Game extends React.Component {
 					key="0"
 					level={level}
 					changePoints={this.changePoints.bind(this)}
+					changeLevel={this.changeLevel.bind(this)}
 				/>
 			);
 		} else if (game_ended === false && level_num > 0) {
@@ -116,7 +117,7 @@ export default class Game extends React.Component {
 
 	render() {
 		return [
-			<Header levelNum={this.state.level_num} points={this.state.points} gameReady={this.state.game_ready} changeLevel={this.changeLevel.bind(this)}/>,
+			<Header levelNum={this.state.level_num} points={this.state.points} gameReady={this.state.game_ready}/>,
 			<div class="hero-body" id="myHeroBody">
 				<div class="container has-text-centered">
 					{this.renderButton()}

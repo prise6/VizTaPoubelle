@@ -12,7 +12,8 @@ export default class Footer extends React.Component {
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        Challenge DataViz' pour <strong><a href="http://www.lincoln.fr">Lincoln</a></strong> - par <a href="http://github.com/prise6">prise6</a>
+        Challenge DataViz' pour <strong><a href="http://www.lincoln.fr">Lincoln</a></strong> -
+         par <a href="http://bfy.tw/IiOU" target="_blank">prise6</a>
       </p>
     </div>
   </div>

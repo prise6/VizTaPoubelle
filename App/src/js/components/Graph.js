@@ -53,9 +53,16 @@ export default class Graph extends React.Component {
 			);
 		} else {
 			return (
-				<a class="button is-small is-success is-outlined" onClick={this.changeStateHidden.bind(this)}>
-					&larr; retour
+				[				
+				<a class="button is-success is-outlined reponses" onClick={this.changeStateHidden.bind(this)}>
+					<span class="icon"><i class="fas fa-arrow-left fa-lg"></i></span> 
+					<span>retour</span>
+				</a>,
+				<a class="button is-success is-outlined reponses" onClick={this.props.changeLevel}>
+					<strong>prochaine question</strong>
+					<span class="icon"><i class="fas fa-arrow-right fa-lg"></i></span>
 				</a>
+				]
 			);
 		}
 	}
