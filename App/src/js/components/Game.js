@@ -14,7 +14,8 @@ export default class Game extends React.Component {
 			points: 0,
 			game_ready: false,
 			game_ended: false,
-			level: null
+			level: null,
+			url: 'http://dataquizz.com'
 		};
 	}
 
@@ -76,19 +77,19 @@ export default class Game extends React.Component {
 				<h2 class="subtitle">
 				{this.state.points} pts
 				</h2>,
-				<FacebookShareButton url={'https://prise6.github.io/VizTaPoubelle-site/'}>
+				<FacebookShareButton url={this.state.url}>
 					<div class={'icon-share'}>
 						<FacebookIcon size={32} round={true} />
 					</div>
 				</FacebookShareButton>,
 					
-				<LinkedinShareButton url={'https://prise6.github.io/VizTaPoubelle-site/'}>
+				<LinkedinShareButton url={this.state.url}>
 					<div class={'icon-share'}>
 						<LinkedinIcon size={32} round={true} />
 					</div>
 				</LinkedinShareButton>,
 
-				<TwitterShareButton url={'https://prise6.github.io/VizTaPoubelle-site/'}>
+				<TwitterShareButton url={this.state.url}>
 					<div class={'icon-share'}>
 						<TwitterIcon size={32} round={true} />
 					</div>
